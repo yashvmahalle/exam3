@@ -1,0 +1,848 @@
+<html></html>
+ <head>
+  <title>
+   Web 3.0 Launch
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #2D0C4E;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            margin: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        .navbar .logo img {
+            height: 40px;
+        }
+        .navbar .get-started {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+        .header {
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #2D0C4E 0%, #1A1A1A 100%);
+            border-radius: 50px;
+            margin: 20px;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .header h1 span {
+            color: #E91E63;
+        }
+        .header p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .header .buttons {
+            margin: 30px 0;
+        }
+        .header .buttons a {
+            background: #3B82F6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .header .buttons a.view-docs {
+            background: transparent;
+            border: 1px solid white;
+        }
+        .backed-by {
+            margin: 50px 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            padding: 20px;
+            display: inline-block;
+        }
+        .backed-by img {
+            height: 40px;
+            margin: 0 20px;
+        }
+        .info {
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            margin: 20px;
+        }
+        .info p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .info p span {
+            color: #3B82F6;
+        }
+        .block {
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50px;
+            margin: 20px;
+        }
+        .block h2 {
+            font-size: 32px;
+            margin: 0;
+        }
+        .block h2 span {
+            color: #3B82F6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-logos img {
+            margin: 0 10px;
+            height: 50px;
+        }
+        .main-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        .sub-title {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .info-box .text {
+            text-align: left;
+        }
+        .info-box .text h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .info-box .text ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-box .text ul li {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .info-box .text ul li i {
+            color: #6A0DAD;
+            margin-right: 10px;
+        }
+        .info-box .image {
+            max-width: 150px;
+        }
+        .info-box .image img {
+            width: 100%;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .stat-box h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .stat-box p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .cta-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cta-box .text {
+            text-align: left;
+        }
+        .cta-box .text h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .cta-box .text p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .cta-box .button {
+            background: #6A0DAD;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .cta-box .image {
+            max-width: 100px;
+        }
+        .cta-box .image img {
+            width: 100%;
+        }
+        .container a2 {
+            padding: 50px 20px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .title span {
+            color: #6a00ff;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #1a1a3d;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-card h3 {
+            font-size: 20px;
+            margin: 15px 0 10px;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #b3b3cc;
+        }
+        .footer {
+            margin-top: 50px;
+        }
+        .footer h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .footer h2 span {
+            color: #6a00ff;
+        }
+        .chains {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .chain {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            color: #b3b3cc;
+        }
+        .chain img {
+            width: 30px;
+        }
+        .container a3{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin: 50px 0 20px;
+        }
+        .section-title span {
+            color: #4a90e2;
+        }
+        .section-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 50px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .card {
+            background-color: #1c1f4a;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            background-color: white;
+            color: #1c1f4a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .reviews-title {
+            font-size: 2.5em;
+            margin: 50px 0 20px;
+        }
+        .reviews-title span {
+            color: #a64ac9;
+        }
+        .review-card-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .review-card {
+            background-color: #1c1f4a;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .review-text {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .review-author {
+            display: flex;
+            align-items: center;
+        }
+        .review-author img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .review-author-name {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .container a5{
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+        .hero {
+            margin-top: 100px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .hero button {
+            background-color: #4a00e0;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .hero button:hover {
+            background-color: #8e2de2;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0;
+        }
+        .footer .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .column ul li {
+            margin: 5px 0;
+        }
+        .footer .column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .column ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .footer .social-icons a {
+            color: #fff;
+            font-size: 24px;
+        }
+        .newsletter {
+            display: flex;
+            align-items: center;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4a00e0;
+            color: white;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #8e2de2;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="Logo" height="40" src="" width="40"/>
+   </div>
+   <div class="nav-links">
+    <a href="#">
+     Home
+    </a>
+    <a href="#">
+     Documentation
+    </a>
+    <a href="#">
+     Blogs
+    </a>
+    <a href="#">
+     LYNC Portal
+    </a>
+    <a href="#">
+     Request a demo
+    </a>
+   </div>
+   <a class="get-started" href="#">
+    Get started
+   </a>
+  </div>
+  <div class="header">
+   <h1>
+    Launch Your Game on
+    <span>
+     Web 3.0
+    </span>
+    in Minutes
+   </h1>
+   <p>
+    We help game developers to launch their game on Web 3.0, by keeping blockchain complexities aside with WebWorld SDKs!
+   </p>
+   <div class="buttons">
+    <a href="#">
+     Get started
+    </a>
+    <a class="view-docs" href="#">
+     View Docs
+    </a>
+   </div>
+  </div>
+  <div class="backed-by">
+   <p>
+    Backed by
+   </p>
+   <img alt="LonghashX" height="40" src="l3.png" width="100"/>
+   <img alt="Axelar" height="40" src="l2.png" width="100"/>
+   <img alt="Filecoin" height="40" src="l1.png" width="100"/>
+  </div>
+  <div class="info">
+   <p>
+    LYNC provides a scalable infrastructure for launching web3 games, without hampering the
+    <span>
+     gaming experience
+    </span>
+    . So that you can deliver the next big hit!
+   </p>
+  </div>
+  <div class="block">
+   <h2>
+    Making blockchain gaming accessible to
+    <span>
+     everyone!
+    </span>
+   </h2>
+  </div>
+  <div class="container">
+    <div class="header-logos">
+        <img alt="Logo 1" height="50" src="a1.png" width="100"/>
+        <img alt="Logo 1" height="50" src="a3.png" width="100"/>
+        <img alt="Logo 1" height="50" src="a4.png" width="100"/>
+        <img alt="Logo 1" height="50" src="a5.png" width="100"/>
+        <img alt="Logo 1" height="50" src="a6.png" width="100"/>
+    </div>
+    <h1 class="main-title">
+     Power Up Your Web3 Game Development, With LYNC SDKs
+    </h1>
+    <p class="sub-title">
+     LYNC SDKs can be easily integrated into game engines like Unity 3D and Unreal Engine in a few clicks.
+    </p>
+    <div class="info-box">
+     <div class="text">
+      <h3>
+       Don't Worry about the Web3 Complexities
+      </h3>
+      <ul>
+       <li>
+        <i class="fas fa-star">
+        </i>
+        Save 9-12 months of development time
+       </li>
+       <li>
+        <i class="fas fa-star">
+        </i>
+        Focus completely on Game Dev and Mechanics
+       </li>
+       <li>
+        <i class="fas fa-star">
+        </i>
+        Save Up to $500K+ on Salaries &amp; Smart Contract Auditing
+       </li>
+       <li>
+        <i class="fas fa-star">
+        </i>
+        Go Cross-Chain in a few clicks
+       </li>
+      </ul>
+     </div>
+     <div class="image">
+      <img alt="Ethereum logo" height="150" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-L1MgEvliTBLnbzprVOYuU7Xo.png?st=2024-09-30T08%3A40%3A53Z&amp;se=2024-09-30T10%3A40%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T18%3A23%3A29Z&amp;ske=2024-09-30T18%3A23%3A29Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=JvggWuvGYklISDmS/L8JXr9rbESEG14O4%2BG4pCVN8Mc%3D" width="150"/>
+     </div>
+    </div>
+    <div class="cta-box">
+     <div class="text">
+      <h3>
+       Elevate Your Gameplay with Essential Insights!
+      </h3>
+      <p>
+       Unleash Your Potential - Explore the Knowledge Hub Today!
+      </p>
+     </div>
+     <a class="button" href="#">
+      View Docs
+     </a>
+     <div class="image">
+      <img alt="Game controller" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-XafZa6w7nWPZ3xLjHfvE52iP.png?st=2024-09-30T08%3A40%3A53Z&amp;se=2024-09-30T10%3A40%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T16%3A11%3A45Z&amp;ske=2024-09-30T16%3A11%3A45Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=YOJUietWzSuE0h07jDw34zPPg9SmDxUfDlmjkRpvKMo%3D" width="100"/>
+     </div>
+    </div>
+    <div class="stats">
+     <div class="stat-box">
+      <h4>
+       200+
+      </h4>
+      <p>
+       Projects have downloaded &amp; integrated LYNC SDKs
+      </p>
+     </div>
+     <div class="stat-box">
+      <h4>
+       8000+
+      </h4>
+      <p>
+       Contracts have been deployed via LYNC
+      </p>
+     </div>
+     <div class="stat-box">
+      <h4>
+       50000+
+      </h4>
+      <p>
+       User ops created in 10 hours
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="container a2">
+    <div class="title">
+     Product
+     <span>
+      Suite
+     </span>
+    </div>
+    <div class="product-grid">
+     <div class="product-card">
+      <img alt="Image of a person using LYNC Wallet SDK" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-YCpNyWn7zLqU01A16MWHOZkt.png?st=2024-09-30T08%3A50%3A14Z&amp;se=2024-09-30T10%3A50%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A09%3A43Z&amp;ske=2024-10-01T01%3A09%3A43Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XAoBRy%2BkPeITc5Xj0AGduOGofY6A%2BPStxZxRVHXQ9GM%3D" width="300"/>
+      <h3>
+       LYNC Wallet SDK
+      </h3>
+      <p>
+       Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes.
+      </p>
+     </div>
+     <div class="product-card">
+      <img alt="Image of a person using LYNC Wallet SDK" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-YCpNyWn7zLqU01A16MWHOZkt.png?st=2024-09-30T08%3A50%3A14Z&amp;se=2024-09-30T10%3A50%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A09%3A43Z&amp;ske=2024-10-01T01%3A09%3A43Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XAoBRy%2BkPeITc5Xj0AGduOGofY6A%2BPStxZxRVHXQ9GM%3D" width="300"/>
+      <h3>
+       LYNC Wallet SDK
+      </h3>
+      <p>
+       Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes.
+      </p>
+     </div>
+     <div class="product-card">
+      <img alt="Image of a person using LYNC Wallet SDK" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-YCpNyWn7zLqU01A16MWHOZkt.png?st=2024-09-30T08%3A50%3A14Z&amp;se=2024-09-30T10%3A50%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A09%3A43Z&amp;ske=2024-10-01T01%3A09%3A43Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XAoBRy%2BkPeITc5Xj0AGduOGofY6A%2BPStxZxRVHXQ9GM%3D" width="300"/>
+      <h3>
+       LYNC Wallet SDK
+      </h3>
+      <p>
+       Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes.
+      </p>
+     </div>
+     <div class="product-card">
+      <img alt="Image of a person using LYNC Wallet SDK" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-YCpNyWn7zLqU01A16MWHOZkt.png?st=2024-09-30T08%3A50%3A14Z&amp;se=2024-09-30T10%3A50%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A09%3A43Z&amp;ske=2024-10-01T01%3A09%3A43Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XAoBRy%2BkPeITc5Xj0AGduOGofY6A%2BPStxZxRVHXQ9GM%3D" width="300"/>
+      <h3>
+       LYNC Wallet SDK
+      </h3>
+      <p>
+       Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes.
+      </p>
+     </div>
+     <div class="product-card">
+      <img alt="Image of a person using LYNC Wallet SDK" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-YCpNyWn7zLqU01A16MWHOZkt.png?st=2024-09-30T08%3A50%3A14Z&amp;se=2024-09-30T10%3A50%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A09%3A43Z&amp;ske=2024-10-01T01%3A09%3A43Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XAoBRy%2BkPeITc5Xj0AGduOGofY6A%2BPStxZxRVHXQ9GM%3D" width="300"/>
+      <h3>
+       LYNC Wallet SDK
+      </h3>
+      <p>
+       Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes.
+      </p>
+     </div>
+     <div class="product-card">
+      <img alt="Image of a person using LYNC Wallet SDK" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-YCpNyWn7zLqU01A16MWHOZkt.png?st=2024-09-30T08%3A50%3A14Z&amp;se=2024-09-30T10%3A50%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A09%3A43Z&amp;ske=2024-10-01T01%3A09%3A43Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XAoBRy%2BkPeITc5Xj0AGduOGofY6A%2BPStxZxRVHXQ9GM%3D" width="300"/>
+      <h3>
+       LYNC Wallet SDK
+      </h3>
+      <p>
+       Empowering developers to integrate account abstraction in their game, dapp, metaverse and more in minutes.
+      </p>
+     </div>
+    </div>
+    <div class="footer">
+     <h2>
+      With LYNC, build on your
+      <span>
+       favorite chain.
+      </span>
+     </h2>
+     <div class="chains">
+      <div class="chain">
+       <img alt="Ethereum logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-KgVp3pWYwXtAF6U96UjO6GOv.png?st=2024-09-30T08%3A50%3A09Z&amp;se=2024-09-30T10%3A50%3A09Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A22%3A44Z&amp;ske=2024-10-01T01%3A22%3A44Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=gei8uLiONf74KaXmddhd/GDYAd7kPpnLrMSNgoaceCw%3D" width="30"/>
+       ethereum
+      </div>
+      <div class="chain">
+       <img alt="Polygon logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-RcPwPTktJJ7ZDNxBtvUhnYKx.png?st=2024-09-30T08%3A50%3A10Z&amp;se=2024-09-30T10%3A50%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A20%3A29Z&amp;ske=2024-10-01T01%3A20%3A29Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=gtD6yyx9YhzkL%2B4vOQNkneBFzi7rQrbk2MTi0z0HCt4%3D" width="30"/>
+       polygon
+      </div>
+      <div class="chain">
+       <img alt="Aptos logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-K1eD6N4YaIGVZ9oiR8MiHsQD.png?st=2024-09-30T08%3A50%3A10Z&amp;se=2024-09-30T10%3A50%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A16%3A28Z&amp;ske=2024-10-01T01%3A16%3A28Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=HcRf8d5suw7nivLeYmPXiXtrCJou8NLM6k92TyWP0cI%3D" width="30"/>
+       APTOS
+      </div>
+      <div class="chain">
+       <img alt="zkSync logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-SjsuJvO9GHkK6omICSQfO2pe.png?st=2024-09-30T08%3A50%3A07Z&amp;se=2024-09-30T10%3A50%3A07Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T01%3A48%3A00Z&amp;ske=2024-10-01T01%3A48%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=NfeFyRssPu35lERSJfbOf9c5j2ihaeRHZb6RAEbJOpM%3D" width="30"/>
+       zkSync
+      </div>
+      <div class="chain">
+       <img alt="Shardeum logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-iPyKVcBWZWGP7d1JJ05HibVj.png?st=2024-09-30T08%3A50%3A08Z&amp;se=2024-09-30T10%3A50%3A08Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T07%3A20%3A53Z&amp;ske=2024-10-01T07%3A20%3A53Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=vu%2BiFsnIROZHTYcQLNw8yBIm6Y9Sq6TG53jt4ozCJaU%3D" width="30"/>
+       Shardeum
+      </div>
+      <div class="chain">
+       <img alt="Astar logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-51ZDEHtMO6PfeRnSpUe97eyA.png?st=2024-09-30T08%3A50%3A07Z&amp;se=2024-09-30T10%3A50%3A07Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T14%3A26%3A35Z&amp;ske=2024-09-30T14%3A26%3A35Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=BPHjmkI3ad7W1BRsJRms8LwoOzmhH/25rtuynNtx/gc%3D" width="30"/>
+       ASTAR
+      </div>
+      <div class="chain">
+       <img alt="Saga logo" height="30" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-cEr1faRUX0znfNAivjOv3PPH.png?st=2024-09-30T08%3A50%3A08Z&amp;se=2024-09-30T10%3A50%3A08Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-29T15%3A42%3A40Z&amp;ske=2024-09-30T15%3A42%3A40Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=uZjNBlaacne7QgCOdczTam%2BlO7CMDrsEsdVsmxvRGKA%3D" width="30"/>
+       SAGA
+      </div>
+      <div class="chain">
+       <img alt="Avalanche logo" src="https://placehold.co/30x30"/>
+       AVALANCHE
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="container a3">
+    <div class="section-title">From our <span>Blog</span></div>
+    <div class="section-subtitle">Level Up Your Web3 Gaming Experience: Explore Our Blog for Insights, Tips, and Innovations in Gaming SDKs!</div>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://placehold.co/300x200" alt="LYNC teamed up with Astar Network">
+            <div class="card-content">
+                <div class="card-title">LYNC teamed up with Astar Network to effortlessly bring the next billion gamers into Web3</div>
+                <div class="card-text">LYNC joins forces with Astar Network to allow game developers and studios to launch games in just a few minutes using LYNC's SDK and infrastructure.</div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/300x200" alt="LYNC teamed up with Astar Network">
+            <div class="card-content">
+                <div class="card-title">LYNC teamed up with Astar Network to effortlessly bring the next billion gamers into Web3</div>
+                <div class="card-text">LYNC joins forces with Astar Network to allow game developers and studios to launch games in just a few minutes using LYNC's SDK and infrastructure.</div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/300x200" alt="LYNC teamed up with Astar Network">
+            <div class="card-content">
+                <div class="card-title">LYNC teamed up with Astar Network to effortlessly bring the next billion gamers into Web3</div>
+                <div class="card-text">LYNC joins forces with Astar Network to allow game developers and studios to launch games in just a few minutes using LYNC's SDK and infrastructure.</div>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-title">Valuable <span>Reviews</span></div>
+    <div class="review-card-container">
+        <div class="review-card">
+            <div class="review-text">Absolutely blown away by the capabilities of this company's Web3 gaming SDK! Integrating it into my project was seamless, and the innovative tools provided took my game to the next level. The support team was incredibly responsive and helpful throughout the process. Highly recommended!</div>
+            <div class="review-author">
+                <img src="https://placehold.co/40x40" alt="Author's profile picture">
+                <div class="review-author-name">ALEX GEORGE</div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-text">Absolutely blown away by the capabilities of this company's Web3 gaming SDK! Integrating it into my project was seamless, and the innovative tools provided took my game to the next level. The support team was incredibly responsive and helpful throughout the process. Highly recommended!</div>
+            <div class="review-author">
+                <img src="https://placehold.co/40x40" alt="Author's profile picture">
+                <div class="review-author-name">ALEX GEORGE</div>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-text">Absolutely blown away by the capabilities of this company's Web3 gaming SDK! Integrating it into my project was seamless, and the innovative tools provided took my game to the next level. The support team was incredibly responsive and helpful throughout the process. Highly recommended!</div>
+            <div class="review-author">
+                <img src="https://placehold.co/40x40" alt="Author's profile picture">
+                <div class="review-author-name">ALEX GEORGE</div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="footer-bottom">
+            <p>2024 LYNC World - <a href="#">Terms of service</a></p>
+        </div>
+        <div class="footer" style="">
+            <div class="column" style="">
+                <h3>LYNC</h3>
+                <p>A GameFi infrastructure</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="column" style="">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#">SDK's</a></li>
+                    <li><a href="#">Transfer API's</a></li>
+                    <li><a href="#">Token API's</a></li>
+                    <li><a href="#">NFT API's</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Supercharge your inbox</h3>
+                <p>Sign up for our newsletter</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="enter your email address">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
